@@ -1,0 +1,39 @@
+#assignment_01: calculator
+def Addition(First_digit, Second_digit):
+	return First_digit+Second_digit
+	
+def Subtraction (First_digit, Second_digit):
+	return First_digit-Second_digit
+	
+def Multiplication (First_digit, Second_digit):
+	return First_digit*Second_digit
+	
+def Division (First_digit, Second_digit):
+	return First_digit/Second_digit
+		
+print("Please choose your operation-")
+print("Addition")
+print("Subtraction")
+print("Multiplication")
+print("Division")
+
+# Take input from the user 
+choice = raw_input("Enter operation: ")
+
+First_digit = float(raw_input('Input first digit: '))
+
+#Operator_action = raw_input ('Input operator action: ')
+
+Second_digit = float(raw_input ('Input second digit: '))
+
+if choice == 'Addition':
+   print(Addition(First_digit, Second_digit))
+elif choice == 'Subtraction':
+   print(Subtraction(First_digit, Second_digit))
+elif choice == 'Multiplication':
+   print(Multiplication(First_digit, Second_digit))
+elif choice == 'Division':
+  print(Division(First_digit, Second_digit))
+else:
+   print("Error with input- try again")
+
