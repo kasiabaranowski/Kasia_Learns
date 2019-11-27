@@ -1,4 +1,15 @@
-#assignment_01: calculator
+#Assignment 01
+#In python create a fully functioning calculator
+#It will take command line input as follows. 
+#“Input first digit”: 5
+#“Input operator action”: *
+#“Input second digit”: 5
+#“Result=25”
+#It should handle plus, minus, multiply and divide operations. 
+#It will handle at least 64 bit floating point digit manipulation. 
+#Note: i'm not clear on what you mean by the above point. I read a bit, but with no luck---https://docs.python.org/3/tutorial/floatingpoint.html
+#It will handle edge cases with “Error with input - try again”
+
 def Addition(First_digit, Second_digit):
 	return First_digit+Second_digit
 	
@@ -12,10 +23,10 @@ def Division (First_digit, Second_digit):
 	return First_digit/Second_digit
 		
 print("Please choose your operation-")
-print("Addition")
-print("Subtraction")
-print("Multiplication")
-print("Division")
+print("+")
+print("-")
+print("*")
+print("/")
 
 # Take input from the user 
 choice = raw_input("Enter operation: ")
@@ -26,14 +37,13 @@ First_digit = float(raw_input('Input first digit: '))
 
 Second_digit = float(raw_input ('Input second digit: '))
 
-if choice == 'Addition':
+if choice == '+':
    print(Addition(First_digit, Second_digit))
-elif choice == 'Subtraction':
+elif choice == '-':
    print(Subtraction(First_digit, Second_digit))
-elif choice == 'Multiplication':
+elif choice == '*':
    print(Multiplication(First_digit, Second_digit))
-elif choice == 'Division':
+elif choice == '/':
   print(Division(First_digit, Second_digit))
 else:
    print("Error with input- try again")
-
